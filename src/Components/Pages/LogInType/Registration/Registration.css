@@ -1,0 +1,23 @@
+.Registration {
+    background-color: #0e1442;
+}
+.registration-ani{
+
+}
+.registration-from{
+
+}
+#reg-input{
+    background-color: aliceblue;
+    border: 1px solid #101d21;
+    border-width: 0px 0px 5px 0px;
+}
+#registration-ani{
+    height: 80vh;  
+    background-color: #253B52; 
+}
+.registration-from {
+    width: 29%;
+    background-color: #1E343C;
+    margin: 7% auto;
+}

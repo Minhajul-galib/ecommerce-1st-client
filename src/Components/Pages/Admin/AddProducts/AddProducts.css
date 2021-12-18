@@ -1,0 +1,15 @@
+.main-from {
+    width: 80%;
+    background-color: #e9f9ff;
+    margin: 4% auto;
+}
+.main-from form{
+    width: 90%;
+    margin: auto;
+    padding: 2% 0px;
+}
+#product-btn{
+    margin: 3% 0 2%;
+    padding: 1% 9%;
+    font-size: 18px;
+}

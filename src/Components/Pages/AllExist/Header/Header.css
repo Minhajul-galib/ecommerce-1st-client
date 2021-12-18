@@ -1,0 +1,15 @@
+.header-menu{
+    background-color: #D7EBEF;
+}
+.header-menu hr {
+    margin: 0px auto;
+    color: #000000;
+    height: 1.4px;
+    width: 92%;
+}
+.header-nav {
+    padding: 6px 4%;
+    background-color: #D7EBEF;
+    /* border: 1px solid #a5a5a5; */
+    /* border-width: 1px 0px 0px 0px; */
+}
