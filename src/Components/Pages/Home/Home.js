@@ -7,12 +7,14 @@ import HomeProducts from './HomeProducts/HomeProducts';
 
 const Home = () => {
     return (
-        <div>
+        <div className='app-div'>
+            <div className='app-div-main'>
             <TopBar></TopBar>
             <Header></Header>
             <HomeBanner></HomeBanner>
             <HomeProducts></HomeProducts>
             <Footer></Footer>
+            </div>
         </div>
     );
 };

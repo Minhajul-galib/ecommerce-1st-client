@@ -4,7 +4,7 @@ const useProducts = () =>{
     const [products, setProducts] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/products')
+        fetch('https://frozen-oasis-37685.herokuapp.com/products')
         .then(res => res.json())
         .then(data => setProducts(data));
 
@@ -13,3 +13,6 @@ const useProducts = () =>{
 }
 
 export default useProducts;
+
+// jamal@gmail.com
+// 1234567

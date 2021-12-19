@@ -61,7 +61,7 @@ const AddProducts = () => {
         const productData = {title, category, availability, productCode, brand, reviews, price, description, image, status};
         console.log(productData);
 
-        fetch('http://localhost:5000/products', {
+        fetch('https://frozen-oasis-37685.herokuapp.com/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

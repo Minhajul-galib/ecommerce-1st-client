@@ -25,7 +25,7 @@ const ProductPurchase = () => {
     // const {title, category, availability, productCode, brand, reviews, price, description, image, status, _id} = props.product;
 
     useEffect(()=>{
-        const url = `http://localhost:5000/products/${id}`;
+        const url = `https://frozen-oasis-37685.herokuapp.com/products/${id}`;
 
         fetch(url)
         .then(res => res.json())
@@ -72,7 +72,7 @@ const ProductPurchase = () => {
         const clientDetails = {fname, lname, email, phone, address1st, address2nd, productTitle, productCode, productCategory, productAvailability, productPrice}
         console.log(clientDetails);
 
-        fetch('http://localhost:5000/orders', {
+        fetch('https://frozen-oasis-37685.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

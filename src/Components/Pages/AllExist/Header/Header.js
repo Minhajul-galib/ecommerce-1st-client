@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import './Header.css'
+import { Link } from "react-router-dom";
+import useAuth from '../../../hooks/useAuth';
 
 
 const Header = () => {
+    const { user } = useAuth();
+
     return (
         <div>
             <div className='header'>
@@ -12,16 +16,11 @@ const Header = () => {
                 <Navbar className='header-nav' expand="lg">
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#link">Link</Nav.Link>
-                            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                            </NavDropdown>
+                        <Nav className="header-nav-div me-auto gap-3">
+                            <Link to="/" >HOME</Link>
+                            <Link to="/about" >ABOUT</Link>
+                            {user.email && <Link to="/Dashboard" >Dashboard</Link>}
+
                         </Nav>
                         </Navbar.Collapse>
                     

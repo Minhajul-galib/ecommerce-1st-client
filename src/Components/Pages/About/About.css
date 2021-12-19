@@ -1,0 +1,39 @@
+.about-content {
+    min-height: 80vh;
+}
+.about-content-div {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin-left: 5%;
+}
+.about-content-div1{
+    width: 100%;
+}
+.about-contents{
+    background-image: url('../../../image/about.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 70vh;
+}
+.about-content-2 p {
+    margin: 0px;
+    color: white;
+    font-size: 18px;
+}
+.about-content-2 h3 {
+    color: white;
+    font-size: 38px;
+    border: 1px solid #ffffff59;
+    border-width: 0px 0px 2px 0px;
+    width: 24%;
+    margin: 0 auto 4%;
+    padding-bottom: 2%;
+}
+.about-content-2 {
+    padding: 2% 14%;
+    background-color: #1a2848cc;
+    min-height: 70vh;
+}

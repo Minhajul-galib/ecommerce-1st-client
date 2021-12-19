@@ -13,3 +13,8 @@
     /* border: 1px solid #a5a5a5; */
     /* border-width: 1px 0px 0px 0px; */
 }
+.header-nav-div a {
+    text-decoration: none;
+    color: black;
+    padding: 2% 0;
+}
